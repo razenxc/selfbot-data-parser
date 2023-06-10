@@ -5,7 +5,6 @@ body {
     color: white;
 }
 
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -32,6 +31,22 @@ body {
 #fileInput {
     background-color: #5865f2;
     border-radius: 10px;
+}
+
+.user_panel_button {
+    height: 21px;
+    width: 110px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #4e5058;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    color: white;
+    text-align: center;
+}
+
+.user_panel_button:hover {
+    transform: scale(0.9);
 }
 
 #output {
@@ -75,4 +90,5 @@ body {
 .message_image {
     width: 400px;
     margin-left: 55px;
+    margin-bottom: 15px;
 }
