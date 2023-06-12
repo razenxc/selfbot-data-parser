@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bot json dump preview. The one who will use knows which bot and which dump!">
+  <meta name="description" content="DataBase dump preview. The one who will use knows which bot and which dump!">
   <link rel="shortcut icon" href="public/icons/favicon.png" type="image/x-icon">
-  <title>JSON Parser</title>
+  <title>DB Parser</title>
   <link rel="stylesheet" href="src/css/index.css">
 </head>
 <body>
   <div class="user_panel">
     <div class="user_panel_inputs">
-      <input type="file" id="fileInput" accept=".json">
+      <input type="file" id="fileInput" accept=".db">
       <a href="#top"><input class="user_panel_button" type="button" value="Scroll to top"></a>
       <a href="#bottom"><input class="user_panel_button" type="button" value="Scroll to bottom"></a>
     </div>
   </div>
-  <p id="top" style="text-align: center;">JSON Parser</p>
+  <p id="top" style="text-align: center;">DB Parser</p>
   <hr>
   <div id="output"><h1 style="text-align: center;">Select a file in the panel on the top right ↗</h1></div>
   <hr>
   <p id="bottom" style="text-align: center;">© 2023 Razenxc Software</p>
 
   <!-- Scripts -->
-  <script src="src/js/parser.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-asm-debug.js"></script>
+  <script src="src/js/db_parser.js"></script>
 </body>
 </html>
